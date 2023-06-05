@@ -1,2 +1,56 @@
+.custom-btn {
+    font-size: 13px;
+    background: $theme1;
+    color:#000;
 
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    &:hover {
+        background-color:#eac34f;
+        color: #000;
+    }
+    &:focus {
+        background-color:#eac34f;
+        color: #000;
+    }
+    &:active {
+        background-color:#eac34f;
+        color: #000;
+    }
+}
 
+.custom-btn-2 {
+    font-size: 12px;
+    background: $theme2;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    & .google-logo {
+        max-height: 20px;
+        max-width: 20px;
+    }
+    &:hover {
+        background-color: #000000a9;
+        color: #fff;
+    }
+}
+ 
+// cusotm-btn
+.custom-btn-3 {
+    font-size: 13px;
+    background: $theme1;
+    color:#000;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    &:hover {
+        background-color:#eac34f;
+        color: #000;
+    }
+    &:focus {
+        background-color:#eac34f;
+        color: #000;
+    }
+    &:active {
+        background-color:#eac34f;
+        color: #000;
+    }
+}
