@@ -17,10 +17,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 .title {
-  font-size: 14px;
-  color: #00000096;
+  font-size: 16px;
+  color: lighten($black,30);
   text-align: justify;
-  line-height: normal;
+  line-height: 25px;
 }
 .title-2 {
   font-size: 12px;
@@ -36,7 +36,7 @@ body {
   word-spacing: 1px;
 }
 .form-control {
-  font-size: 12px;
+  font-size: 14px;
   color: lighten($black, 50);
 }
 .check-icon-small {

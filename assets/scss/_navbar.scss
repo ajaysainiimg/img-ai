@@ -6,11 +6,12 @@
     & .nav-offcanvas {
         & .nav-item {
             & .nav-link {
-                font-size: 12px;
+                font-size: 14px;
                 color: $theme2;
                 transition: all 0.3s ease-in-out;
                 & .down-arrow {
-                    width: 12px;
+                    height: 10px;
+                    width: 14px;
                     & .downarrowimg {
                         filter: brightness(0);
                         transition: all 0.3s ease-in-out;

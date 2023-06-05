@@ -1,26 +1,26 @@
 .custom-btn {
-    font-size: 13px;
+    font-size: 14px;
     background: $theme1;
-    color:#000;
+    color:$theme2;
 
     transition: all 0.3s ease-in-out;
     white-space: nowrap;
     &:hover {
-        background-color:#eac34f;
-        color: #000;
+        background-color:lighten($theme1,20);
+        color: $theme2;
     }
     &:focus {
-        background-color:#eac34f;
-        color: #000;
+        background-color:lighten($theme1,20);
+        color: $theme2;
     }
     &:active {
-        background-color:#eac34f;
-        color: #000;
+        background-color:lighten($theme1,20);
+        color: $theme2;
     }
 }
 
 .custom-btn-2 {
-    font-size: 12px;
+    font-size: 14px;
     background: $theme2;
     color: $white;
     transition: all 0.3s ease-in-out;
@@ -29,28 +29,28 @@
         max-width: 20px;
     }
     &:hover {
-        background-color: #000000a9;
-        color: #fff;
+        background-color:lighten($black,40);
+        color: $white;
     }
 }
  
 // cusotm-btn
 .custom-btn-3 {
-    font-size: 13px;
+    font-size: 14px;
     background: $theme1;
-    color:#000;
+    color:$black;
     transition: all 0.3s ease-in-out;
     white-space: nowrap;
     &:hover {
-        background-color:#eac34f;
+        background-color:lighten($theme1,20);
         color: #000;
     }
     &:focus {
-        background-color:#eac34f;
+        background-color:lighten($theme1,20);
         color: #000;
     }
     &:active {
-        background-color:#eac34f;
+        background-color:lighten($theme1,20);
         color: #000;
     }
 }
