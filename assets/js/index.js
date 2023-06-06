@@ -18,10 +18,11 @@ window.onscroll = function () {
 $(document).ready(function () {
   (function ($) {
 $('.client-carousel').owlCarousel({
+  items:5,
   loop:true,
-  margin:40,
-  nav:false,
-  dots:true,
+  margin:20,
+  nav:true,
+  dots:false,
   autoplay:false,
   autoplayTimeout:5000,
   autoplayHoverPause:true,
@@ -39,3 +40,19 @@ $('.client-carousel').owlCarousel({
 })
 })(jQuery);
 });
+// $('.client-carousel').owlCarousel({
+//   loop:true,
+//   margin:10,
+//   nav:true,
+//   responsive:{
+//       0:{
+//           items:1
+//       },
+//       600:{
+//           items:2
+//       },
+//       1000:{
+//           items:3
+//       }
+//   }
+// })

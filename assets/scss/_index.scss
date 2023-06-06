@@ -1,5 +1,6 @@
+// hero-section
 .hero-section {
-    background-color: lighten($danger, 45);
+    background-color: lighten($danger, 44);
     & .hero-left {
         & .or {
             font-size: 14px;
@@ -29,13 +30,13 @@
     & .hero-right {
         & .rating {
             & .pen-nib {
-                height: 40px;
-                width: 40px;
+                height: 50px;
+                width: 50px;
                 background-color: $theme1;
-                & .pen-nib-icon {
-                    height: 20px;
-                    width: 20px;
-                }
+                // & .pen-nib-icon {
+                //     height: 20px;
+                //     width: 20px;
+                // }
             }
             & .hero-heading-1 {
                 font-size: 16px;
@@ -55,53 +56,62 @@
             & .texto-result-heading {
                 background: $theme2;
                 color: $white;
-                font-size: 14px;
+                font-size: 16px;
               
             }
             & .texto-content {
                 & .texto-icon {
-                    height: 14px;
-                    width: 14px;
+                    height: 13px;
+                    width: 13px;
                 }
             }
            
         }
+   
+    }
     & .texto-result-2 {
         margin-top:-11rem;
-        min-height: 300px;
-        max-width: 300px;
-        & .texto-result-heading {
-            color: $theme1;
-            background-color: $theme2;
-            font-size: 14px;
-            & .texto-content {
-                color: $white;
+        & .texto-result2-content{
+            min-height: 300px;
+            max-width: 300px;
+            & .texto-result-heading {
+                color: $theme1;
+                background-color: $theme2;
+                font-size: 16px;
+                line-height: normal;
+                & .texto-content {
+                    color: $white;
+                    font-size: 12px;
+                }
+            }
+            & .product-heading {
+                font-size: 14px;
+            }
+            & .formm {
+                font-size: 12px;
+            }
+            & .generate-btn {
                 font-size: 12px;
             }
         }
-        & .product-heading {
-            font-size: 15px;
-        }
+     
     }
-    }
-   
 }
-
+   
 // rating section start
 .rating-captera {
     & .rating-main-icon {
-        max-height: 40px;
-        max-width: 125px;
+        height: 45px;
     }
     & .rating-title {
-        font-size: 14px;
+        font-size: 18px;
         color: $theme2;
     }
  
-    & .rating-logos {
-        max-height: 60px;
-        max-width: 60px;
-    }
+    // & .rating-logos {
+    //     max-height: 60px;
+    //     max-width: 60px;
+    // }
 }
 
 // ai writer
@@ -122,7 +132,7 @@
         & .social-media {
             max-width: 280px;
             & .ads {
-                font-size: 14px;
+                font-size: 16px;
                 color: $theme2;
                 & .ad-icon {
                     max-height: 14px;
@@ -139,12 +149,12 @@
                 height: 1px;
             }
             & .ai-social-icon {
-                max-height: 20px;
-                max-width: 24px;
+                height: 20px;
+                width: 20px;
             }
             & .ai-content {
-                font-size: 12px;
-                color:lighten($black,30);
+                font-size: 14px;
+                color:lighten($black,20);
                 & .yellow-checkicon {
                     height: 12px;
                     width: 12px;
@@ -174,7 +184,7 @@
 // ai-generate
 .ai-generate {
     & .ai-generate-left {
-        background-color: lighten($danger, 45);
+        background-color: lighten($danger, 44);
         & .ai-count {
             font-size: 12px;
             height: 28px;
@@ -182,36 +192,39 @@
             background-color:lighten($danger, 40);
         }
         & .ai-generate-blog {
+            max-width: 300px;
             & .blog-heading {
-                font-size: 13px;
+                font-size: 14px;
             }
             & .blog-content {
-                font-size: 11px;
+                font-size: 12px;
                 color:$theme2;
             }
-            // & .blog-content-2 {
-            //     font-size: 11px;
-            //     color: $theme3;
-            // }
+            & .blog-content-2 {
+                font-size: 12px;
+                color: lighten($black,45);
+            }
             & .generate-btn {
                 font-size: 13px;
                 color: $theme1;
             }
-            // & .text-length {
-            //     font-size: 11px;
-            // }
+            & .blog-contentthree {
+                font-size: 10px;
+                white-space: nowrap;
+            }
         }
       & .complete-project-main {
+        max-width: 300px;
         & .complete-project-content {
-            background-color: lighten($danger, 45);
+            background-color: lighten($danger, 44);
             
             & .count-project {
                 font-size: 14px;
                 color: $theme2;
             }
             & .complete-project-title {
-                font-size: 12px;
-                color:  lighten($black, 35);
+                font-size: 10px;
+                color:  lighten($black, 30);
             }
             & .project-icon {
                 background-color: $white;
@@ -221,9 +234,9 @@
             }
         }
         & .complete-project-img {
-            height: 25px;
-            width: 25px;
-            background: lighten($success, 62);
+            height: 30px;
+            width: 30px;
+            background: lighten($success,62);
             & .complete-project-img-inner {
                 height: 13px;
                 width: 13px;
@@ -233,24 +246,24 @@
             }
         }
         & .complete-project-img-2 {
-            height: 25px;
-            width: 25px;
+            height: 30px;
+            width: 30px;
             background-color: $theme1;
             & .check-icon {
-                padding: 6px;
+                padding: 8px;
             }
         }
       }
     }
     & .ai-generate-right {
-        background:lighten($danger, 45) ;
+        background:lighten($danger, 44) ;
         & .yellowdots {
             height: auto;
             width: 28px;
         }
         & .up-arrow {
-            height: 40px;
-            width: 40px;
+            height: 45px;
+            width: 45px;
             top: 30%;
             right: -5%;
             background-color: $theme1;
@@ -266,12 +279,18 @@
 
 // gpt-3
 .gpt-takes {
+    & .gpt-takes-left {
+        & .gap-title {
+            color: lighten($black,50);
+        }
+    }
     & .gpt-takes-right {
-        background: lighten($info, 48);
+        background: lighten($info, 46);
         & .content-generate {
-            max-width: 250px;
+            max-width: 300px;
+            min-height: 300px;
             & .content-generate-heading {
-                font-size: 12px;
+                font-size: 16px;
                 background-color: $theme2;
                 color: $theme1; 
                 & .close-icon {
@@ -296,8 +315,8 @@
             }
         }
         & .generate-export {
-            margin-top: -110px;
-            max-width: 250px;
+            margin-top: -85px;
+            max-width: 280px;
             & .generate-export-heading {
                 background-color: $theme2;
             }
@@ -306,7 +325,7 @@
                 left: -20%;
                   & .generate-btn {
                 background-color: $theme1;
-                font-size: 12px;
+                font-size: 14px;
                 color: $theme2;
             }
             }
@@ -326,7 +345,7 @@
 // ai-blogeditor
 .ai-blogeditor {
     & .ai-blogeditor-left {
-        background-color:   lighten($info, 48);
+        background-color:   lighten($info, 46);
         & .blog-projectmain {
             & .methods {
                 font-size: 15px;
@@ -396,6 +415,22 @@
 
 // pricing section
 .price-section {
+    & .check-btn {
+        & .time {
+            font-size: 16px;
+            color: $black;
+        }
+        & .form-switch {
+            & .form-check-input {
+                height: 20px;
+                width: 40px;
+                &:checked {
+                    border-color: $theme1;
+                    background-color: $theme1;
+                }
+            }
+        }
+    }
     & .pricing-card {
         & .price-heading {
             font-size: 20px;
@@ -447,38 +482,127 @@
     }
 }
 
-// testimonal
-.testimonal {
-    & .user-card {
-        & .about-client {
-            font-size: 13px;
-            line-height: 18px;
-            color: lighten($black, 35s);
-        }
-        & .slash {
-            font-size: 14px;
-            color: $theme3;
-        }
-        & .rating-title {
-            font-size: 12px;
-            color: $theme2;
-        }
-        & .user-data {
-            & .user-img {
-                max-width: 30px;
-                max-height: 30px;
+// texto-help
+.texto-help {
+    & .title {
+        color: lighten($black, 60);
+    }
+    & .view-all {
+        font-size: 20px;
+        color: $white;
+    }
+    & .textohelp-nav {
+        & .navbar-brand {
+            & .nav-logo {
+                filter: invert(1);
             }
-            & .user-name {
-                font-size: 15px;
-                color: $theme2;
-                line-height: 14px;
+        }
+        & .textohelp-offcanvas {
+            & .nav-link {
+                font-size: 14px;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $theme2;
+                }
             }
-            & .user-position {
-                font-size: 13px;
-                color:lighten($black,40);
+            & .createaccount-btn {
+                color: $white;
+                background: lighten($white, 30);
             }
         }
     }
+    & .textohelp-content {
+        & .textohelp-rightarrow {
+            height: 18px;
+            width: 18px;
+        }
+        & .textohelp-content-heading {
+            font-size: 16px;
+            color: $white;
+        }
+        & .textohelp-content-title {
+            font-size: 14px;
+            color: lighten($black, 70);
+            line-height: 17px;
+        }
+    }
+}
+
+// testimonal
+.testimonal {
+    & .client-carousel {
+        & .user-card {
+            & .about-client {
+                font-size: 16px;
+                line-height: 21px;
+                color:$black;
+            }
+            & .slash {
+                font-size: 14px;
+                color: $theme3;
+            }
+            & .rating-title {
+                font-size: 14px;
+                color: $theme2;
+            }
+            & .user-data {
+                & .user-img {
+                    width: 35px;
+                    height: 35px;
+                }
+                & .user-name {
+                    font-size: 18px;
+                    color: $theme2;
+                }
+                & .user-position {
+                    font-size: 16px;
+                    color:$black;
+                }
+            }
+        }
+        & .owl-nav {
+            position: absolute;
+            top: -55%;
+            right: 5%;
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            & .owl-prev {
+                color: $theme2;
+                border:2px solid $theme1;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                font-size: 25px;
+                display: flex;
+                font-weight: 600;
+                align-items: center;
+                justify-content: center;
+                &:active {
+                    background-color: $theme1;
+                }
+            }
+            & .owl-next {
+                color: $theme2;
+                border:2px solid $theme1;
+                background-color: $theme1;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                font-size: 25px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:active {
+                    background-color:$theme1
+                }
+            }
+
+        }
+    }
+   
 }
 
 // faq section
@@ -486,7 +610,8 @@
     & .question {
         & .accordion-item {
             & .accordion-button {
-                font-size: 13px;
+                font-size: 16px;
+                color: $black;
                 &::after {
                     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
                     transform: scale(.7) !important;
@@ -503,9 +628,97 @@
                   }
             }
             & .accordion-body {
-                font-size: 12px;
+                font-size: 14px;
+                color: $black;
             }
         }
     }
 }
  
+// footer
+.footer {
+    & .footer-logo {
+       height: 30px;
+    }
+    & .footer-btn {
+        font-size: 16px;
+        color: $white;
+    }
+    & .create-account {
+        &:hover {
+            color: lighten($theme1, 20);
+        }
+    }
+    & .join-community {
+        font-size: 20px;
+        color: $white;
+    }
+    & .footer-title {
+        font-size: 14px;
+    }
+    & .main-links {
+        & .main-link-heading {
+            font-size: 18px;
+            color: $white;
+        }
+        & .main-link {
+            font-size: 14px;
+            transition: all 0.3s ease-in-out;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                background-color: $white;
+                height: 2px;
+                transform: translate(0, -50%);
+                width: 12px;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                background-color: $theme1;
+                height: 6px;
+                width: 6px;
+                border-radius: 50%;
+                transform: translate(0, -50%);
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                color: $theme1 !important;
+                transform: translateX(10px);
+                &::before {
+                    opacity: 1;
+                }
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    & .top-btn {
+        height: 40px;
+        width: 40px;
+        top: 1%;
+        right: 5%;
+        & .top-btnicon {
+            transform: rotate(-90deg);
+        }
+    }
+    & .footer-socialicon {
+        height: 30px;
+        width: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    & .copyright {
+        font-size: 14px;
+    }
+}
