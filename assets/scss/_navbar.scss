@@ -1,9 +1,16 @@
 .navbar {
-    background-color: lighten($red, 45);
+    background-color: lighten($red, 44);
     .navbar-brand {
-        width: 115px;
+        height: 45px;
+    }
+    & .menu-icon {
+        width: 30px;
     }
     & .nav-offcanvas {
+        width: 280px;
+        & .btn-close {
+            font-size: 13px;
+        }
         & .nav-item {
             & .nav-link {
                 font-size: 14px;
@@ -47,4 +54,238 @@
         top: 0;
     }
   }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin navbar-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin navbar-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin navbar-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin navbar-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin navbar-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin navbar-mixin-max-xs() {
+    .navbar {
+     
+        .navbar-brand {
+            height: 40px;
+        }
+        & .nav-menubtn {
+            right: 23%;
+            // margin-left: 6rem;
+        }
+        & .menu-icon {
+        }
+        & .nav-offcanvas {
+      
+            & .btn-close {
+            
+            }
+            & .nav-item {
+                & .nav-link {
+                    font-size: 11px;
+                    & .down-arrow {
+                        height: 7px;
+                        width: 10px;
+                        & .downarrowimg {
+                      
+                        }
+                    }
+                    &:hover {
+                      
+                        & .downarrowimg {
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+ // Small devices (landscape phones, less than 768px)
+@mixin navbar-mixin-max-sm() {
+    .navbar {
+     
+        .navbar-brand {
+            height: 40px;
+        }
+        & .nav-menubtn {
+            right: 30%;
+            top: 50%;
+            transform: translateY(-50%);
+            // margin-left: 14rem;
+        }
+        & .menu-icon {
+        }
+        & .nav-offcanvas {
+      
+            & .btn-close {
+            
+            }
+            & .nav-item {
+                & .nav-link {
+                   font-size: 12px;
+                    & .down-arrow {
+                        height: 7px;
+                        width: 12px;
+                        & .downarrowimg {
+                      
+                        }
+                    }
+                    &:hover {
+                      
+                        & .downarrowimg {
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin navbar-mixin-max-md() {
+    .navbar {
+     
+        .navbar-brand {
+        }
+        & .menu-icon {
+        }
+        & .nav-offcanvas {
+      
+            & .btn-close {
+            
+            }
+            & .nav-item {
+                & .nav-link {
+                   
+                    & .down-arrow {
+                       
+                        & .downarrowimg {
+                      
+                        }
+                    }
+                    &:hover {
+                      
+                        & .downarrowimg {
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin navbar-mixin-max-lg() {
+    .navbar {
+     
+        .navbar-brand {
+        }
+        & .menu-icon {
+        }
+        & .nav-offcanvas {
+      
+            & .btn-close {
+            
+            }
+            & .nav-item {
+                & .nav-link {
+                   
+                    & .down-arrow {
+                       
+                        & .downarrowimg {
+                      
+                        }
+                    }
+                    &:hover {
+                      
+                        & .downarrowimg {
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin navbar-mixin-max-xl() {
+    .navbar {
+     
+        .navbar-brand {
+        }
+        & .menu-icon {
+        }
+        & .nav-offcanvas {
+      
+            & .btn-close {
+            
+            }
+            & .nav-item {
+                & .nav-link {
+                   
+                    & .down-arrow {
+                       
+                        & .downarrowimg {
+                      
+                        }
+                    }
+                    &:hover {
+                      
+                        & .downarrowimg {
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1300px)
+@mixin navbar-mixin-max-1300() {
+    .navbar {
+     
+        .navbar-brand {
+        }
+        & .menu-icon {
+        }
+        & .nav-offcanvas {
+      
+            & .btn-close {
+            
+            }
+            & .nav-item {
+                & .nav-link {
+                   
+                    & .down-arrow {
+                       
+                        & .downarrowimg {
+                      
+                        }
+                    }
+                    &:hover {
+                      
+                        & .downarrowimg {
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

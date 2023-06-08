@@ -1,7 +1,6 @@
 // // on scorll navbar
 window.onscroll = function () {
     scrollFunction();
-    topfunction();
   };
   
   var first = true;
@@ -22,10 +21,11 @@ $('.client-carousel').owlCarousel({
   loop:true,
   margin:20,
   nav:true,
-  dots:false,
+  dots:true,
   autoplay:false,
   autoplayTimeout:5000,
   autoplayHoverPause:true,
+  // navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
   responsive:{
       0:{
           items:1
@@ -38,8 +38,11 @@ $('.client-carousel').owlCarousel({
       }
   }
 })
+$( ".owl-prev").html('<img src="assets/img/index/owl-next.svg" alt="client" class="h-100 w-100 img-fluid">');
+ $( ".owl-next").html('<img src="assets/img/index/owl-preview.svg" alt="client" class="h-100 w-100 img-fluid">');
 })(jQuery);
 });
+
 // $('.client-carousel').owlCarousel({
 //   loop:true,
 //   margin:10,
@@ -56,3 +59,4 @@ $('.client-carousel').owlCarousel({
 //       }
 //   }
 // })
+
