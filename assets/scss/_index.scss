@@ -3586,6 +3586,7 @@
             }
             & .textohelp-content-title {
                 font-size: 11px;
+                text-overflow: ellipsis;
             }
         }
     }
