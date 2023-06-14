@@ -427,10 +427,97 @@
      
     }
 }
+// max width 420 px()
+@mixin hero-mixin-max-420px {
+    .hero-section {
+        & .hero-left {
+            & .orline {
+                text-align: center;
+                & .or {
+                    &::before {
+             
+                    }
+                    &::after {
+                 
+                    }
+                }
+            }
+            
+            & .btninput-group {
+                flex-direction: column;
+                gap: 15px;
+                & .email-input {
+                }
+                & .btn-hero {
+                    width: 100%;
+                }
+            }
+            & .google-btn {
+                width: 100%;
+            }
+           
+        }
+        & .hero-right {
+            & .rating {
+                & .pen-nib {
+                  
+                }
+                & .hero-heading-1 {
+                  
+                }
+                & .cratars {
+                 
+                }
+                & .star {
+                
+                }
+            }
+            & .texto-result {
+               
+                & .texto-result-heading {
+                  
+                }
+                & .texto-content {
+                    & .texto-icon {
+                  
+                    }
+                }
+               
+            }
+            & .texto-result-2 {
+         
+                & .texto-result2-content{
+                  
+                    & .texto-result-heading {
+                      
+                        & .texto-content {
+                           
+                        }
+                    }
+                    & .product-heading {
+                      
+                    }
+                    & .formm {
+                       
+                    }
+                    & .generate-btn {
+                       
+                    }
+                }
+             
+            }
+        }
+     
+    }
+}
 // X-Small devices (portrait phones, less than 576px)
 @mixin hero-mixin-max-xs() {
     .hero-section {
         & .hero-left {
+            & .heroinput {
+                height: 31px;
+            }
+
             & .or {
                 font-size: 12px;
                 &::before {
@@ -498,6 +585,9 @@
 @mixin hero-mixin-max-sm() {
        .hero-section {
         & .hero-left {
+            & .heroinput {
+                height: 35px;
+            }
             & .or {
                 font-size: 13px;
                 &::before {
@@ -1199,9 +1289,6 @@
         }
         & .ai-writer-left {
             & .page-count {
-                font-size: 10px;
-                height: 18px;
-                width: 18px;
             }
         }
         & .ai-writer-right {
@@ -1246,9 +1333,6 @@
         }
         & .ai-writer-left {
             & .page-count {
-                font-size: 11px;
-                height: 21px;
-                width: 21px;
             }
         }
         & .ai-writer-right {
@@ -1286,8 +1370,6 @@
         }
         & .ai-writer-left {
             & .page-count {
-                height: 23px;
-                width: 23px;
             }
         }
         & .ai-writer-right {
@@ -1743,9 +1825,6 @@
     .ai-generate {
         & .ai-generate-left {
             & .ai-count {
-                font-size: 10px;
-                height: 18px;
-                width: 18px;
             }
             & .ai-generate-blog {
                 & .blog-heading {
@@ -1808,9 +1887,6 @@
     .ai-generate {
         & .ai-generate-left {
             & .ai-count {
-                font-size: 11px;
-                height: 22px;
-                width: 22px;
             }
             & .ai-generate-blog {
                 & .blog-heading {
@@ -2104,37 +2180,41 @@
                 }
             }
         }
-        & .generate-export {
-            margin-top: -70px;
-            max-width: 280px;
-            & .generate-export-heading {
-                background-color: $theme2;
-            }
-            & .generate-btnmain {
-                top: -15%;
-                left: -22%;
-                & .generate-btn {
-                background-color: $theme1;
-                font-size: 14px;
-                color: $theme2;
+        & .export-btn2 {
+            left: -20%;
+            bottom: -18%;
+            & .generate-export {
+                max-width: 280px;
+                & .generate-export-heading {
+                    background-color: $theme2;
                 }
-                & .arrowImg {
-                    left:8px;
-                    top: 27px;
-                    max-height: 60px;
-                    width: 50px;
-                 }
-            }
-            & .export-btnmain {
-                bottom: -11%;
-               right: -19%;
-                  & .export-btn {
-                background-color: $theme1;
-                font-size: 10px;
-                color: $theme2;
-            }
+                & .generate-btnmain {
+                    top: -15%;
+                    left: -22%;
+                    & .generate-btn {
+                    background-color: $theme1;
+                    font-size: 14px;
+                    color: $theme2;
+                    }
+                    & .arrowImg {
+                        left:8px;
+                        top: 27px;
+                        max-height: 60px;
+                        width: 50px;
+                     }
+                }
+                & .export-btnmain {
+                    bottom: -11%;
+                   right: -19%;
+                      & .export-btn {
+                    background-color: $theme1;
+                    font-size: 10px;
+                    color: $theme2;
+                }
+                }
             }
         }
+       
     }
 }
 
@@ -2344,6 +2424,50 @@
         }
     }
 }
+// (less than 420)
+@mixin gpt-mixin-max-420px {
+    .gpt-takes {
+        & .gpt-takes-left {
+            & .gap-title {
+            }
+        }
+        & .gpt-takes-right {
+            & .content-generate {
+                & .content-generate-heading {
+                    & .close-icon {
+                    }
+                }
+                & .content-generate-headingtwo {
+                }
+                & .Choosetopic {
+                    & .Choosetopic-tabline {
+                    }
+                }
+                & .select-length {
+                    & .length-line {
+                    }
+                }
+            }
+           & .export-btn2 {
+            left: -8%;
+            & .generate-export {
+                & .generate-export-heading {
+                }
+                & .generate-btnmain {
+                      & .generate-btn {
+                    &::before {
+                    }
+                }
+                }
+                & .export-btnmain {
+                      & .export-btn {
+                }
+                }
+            }
+           }
+        }
+    }
+}
 // X-Small devices (portrait phones, less than 576px)
 @mixin gpt-mixin-max-xs() {
     .gpt-takes {
@@ -2353,6 +2477,7 @@
         }
         & .gpt-takes-right {
             & .content-generate {
+                max-width: 250px;
                 & .content-generate-heading {
                     font-size: 12px;
                     & .close-icon {
@@ -2369,12 +2494,13 @@
                     }
                 }
             }
+           & .export-btn2 {
             & .generate-export {
+                max-width: 230px;
                 & .generate-export-heading {
                 }
                 & .generate-btnmain {
                       & .generate-btn {
-                        font-size: 11px;
                     &::before {
                     }
                 }
@@ -2385,6 +2511,7 @@
                 }
                 }
             }
+           }
         }
     }
 }
@@ -2418,7 +2545,7 @@
                 }
                 & .generate-btnmain {
                       & .generate-btn {
-                        font-size: 12px;
+                        font-size: 11px;
                     &::before {
                     }
                 }
@@ -2456,12 +2583,13 @@
                     }
                 }
             }
+           & .export-btn2 {
             & .generate-export {
                 & .generate-export-heading {
                 }
                 & .generate-btnmain {
                       & .generate-btn {
-                        font-size: 13px;
+                        font-size: 11px;
                     &::before {
                     }
                 }
@@ -2471,6 +2599,7 @@
                 }
                 }
             }
+           }
         }
     }
 }
@@ -2597,6 +2726,7 @@
         }
     }
 }
+
 //  gpt-3 section media query end 
 // gpt-3 section end
 
@@ -2630,7 +2760,7 @@
         }
     
       & .after-textoresult-main {
-        right: 17%;
+        right: -45%;
         & .after-textoresult {
             max-width: 300px;
             & .after-textoresult-heading { 
@@ -2904,6 +3034,7 @@
     .ai-blogeditor {
         & .ai-blogeditor-left {
             & .blog-projectmain {
+                max-width: 250px;
                 & .methods {
                     font-size: 13px;
                      & .close-icon {
@@ -2920,7 +3051,7 @@
             }
         
           & .after-textoresult-main {
-            right: 5%;
+            right: -28%;
             & .after-textoresult {
                 max-width: 230px;
                 & .after-textoresult-heading { 
@@ -3022,6 +3153,7 @@
             }
         
           & .after-textoresult-main {
+            right: -45%;
             & .after-textoresult {
                 & .after-textoresult-heading { 
                }
@@ -3066,6 +3198,7 @@
             }
         
           & .after-textoresult-main {
+            right: -28%;
             & .after-textoresult {
                 & .after-textoresult-heading { 
                }
@@ -3210,7 +3343,7 @@
             font-size: 15px;
         }
         & .textohelp-offcanvas {
-            width: 280px;
+            height: 60%;
             & .nav-link {
                 font-size: 14px;
                 color: $white;
@@ -3393,13 +3526,44 @@
 }
 // X-Small devices (portrait phones, less than 576px)
 @mixin textohelp-mixin-max-xs() {
+    // .texto-help {
+    //     & .view-all {
+    //         font-size: 16px;
+    //     }
+    //     & .textohelp-nav {
+    //         & .navbar-brand {
+    //             height: 35px;
+    //             & .nav-logo {
+    //             }
+    //         }
+    //         & .textohelp-offcanvas {
+    //             & .nav-link {
+    //                 font-size: 11px;
+    //                 &:hover {
+    //                 }
+    //             }
+    //             & .createaccount-btn {
+    //             }
+    //         }
+    //     }
+    //     & .textohelp-content {
+    //         & .textohelp-rightarrow {
+    //         }
+    //         & .textohelp-content-heading {
+    //             font-size: 13px;
+    //             padding-top: 2px;
+    //         }
+    //         & .textohelp-content-title {
+    //             font-size: 11px;
+    //         }
+    //     }
+    // }
     .texto-help {
         & .view-all {
             font-size: 16px;
         }
         & .textohelp-nav {
             & .navbar-brand {
-                height: 35px;
                 & .nav-logo {
                 }
             }
@@ -3421,7 +3585,7 @@
                 padding-top: 2px;
             }
             & .textohelp-content-title {
-                font-size: 12px;
+                font-size: 11px;
             }
         }
     }
@@ -3438,6 +3602,7 @@
                 }
             }
             & .textohelp-offcanvas {
+                z-index: 1222;
                 & .nav-link {
                     font-size: 12px;
                     color: $black;
@@ -3445,7 +3610,6 @@
                     }
                 }
                 & .createaccount-btn {
-                 
                     background: lighten($black, 50) !important;
                 }
             }
@@ -3457,7 +3621,7 @@
                 font-size: 14px;
             }
             & .textohelp-content-title {
-                font-size: 13px;
+                font-size: 12px;
             }
         }
     }
@@ -4567,12 +4731,11 @@
                 color: $black;
                 &::after {
                     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
-                    height: 20px;
-                    width: 20px;
                     height: 15px;
                     width: 15px;
                     background-size: cover;
                      background-position: center;
+                     margin-left: 15px;
                   }
                   &:not(.collapsed)::after {
                     background: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
@@ -4580,6 +4743,7 @@
                      width: 15px;
                      background-size: cover;
                      background-position: center;
+                     margin-left: 15px;
                   }
                   &:not(.collapsed) {
                     background-color: $white ;
@@ -4819,595 +4983,3 @@
 }
 // faq sectioon media query end
 //  faq section end
-
-
-// footer start
-.footer {
-    & .footer-logo {
-       height: 30px;
-    }
-    & .footer-btn {
-        font-size: 16px;
-        color: $white;
-    }
-    & .create-account {
-        color: $white;
-        background-color: $theme1;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-            background-color: lighten($theme1, 20) !important;
-        }
-    }
-    & .join-community {
-        font-size: 20px;
-        color: $white;
-    }
-    & .footer-title {
-        font-size: 14px;
-    }
-    & .main-links {
-        & .main-link-heading {
-            font-size: 18px;
-            color: $white;
-        }
-        & .main-link {
-            font-size: 14px;
-            transition: all 0.3s ease-in-out;
-            &::before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 0;
-                background-color: $white;
-                height: 2px;
-                transform: translate(0, -50%);
-                width: 12px;
-                opacity: 0;
-                transition: all 0.3s ease-in-out;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 9px;
-                background-color: $theme1;
-                height: 6px;
-                width: 6px;
-                border-radius: 50%;
-                transform: translate(0, -50%);
-                opacity: 0;
-                transition: all 0.3s ease-in-out;
-            }
-            &:hover {
-                color: $theme1 !important;
-                transform: translateX(10px);
-                &::before {
-                    opacity: 1;
-                }
-                &::after {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-    & .top-btn {
-        height: 40px;
-        width: 40px;
-        top: 1%;
-        right: 5%;
-        & .top-btnicon {
-            transform: rotate(-90deg);
-        }
-    }
-    & .footer-socialicon {
-        height: 30px;
-        width: 30px;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-    & .copyright {
-        font-size: 14px;
-    }
-}
-// footer media query end
-// Small devices (landscape phones, 576px and up)
-@mixin footer-mixin-min-sm() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// Medium devices (tablets, 768px and up)
-@mixin footer-mixin-min-md() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// Large devices (desktops, 992px and up)
-@mixin footer-mixin-min-lg() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// X-Large devices (large desktops, 1200px and up)
-@mixin footer-mixin-min-xl() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// XX-Large devices (larger desktops, 1400px and up)
-@mixin footer-mixin-min-xxl() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// X-Small devices (portrait phones, less than 576px)
-@mixin footer-mixin-max-xs() {
-    .footer {
-        & .footer-logo {
-            height: 25px;
-        }
-        & .footer-btn {
-            font-size: 14px;
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-            font-size: 16px;
-        }
-        & .footer-title {
-            font-size: 12px;
-        }
-        & .main-links {
-            & .main-link-heading {
-                font-size: 15px;
-            }
-            & .main-link {
-                font-size: 12px;
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            height: 30px;
-            width: 30px;
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            height: 20px;
-            width: 20px;
-            &:hover {
-            }
-        }
-        & .copyright {
-            font-size: 11px;
-        }
-    }
-}
- // Small devices (landscape phones, less than 768px)
-@mixin footer-mixin-max-sm() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-            font-size: 16px;
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-            font-size: 17px;
-        }
-        & .footer-title {
-            font-size: 13px;
-        }
-        & .main-links {
-            & .main-link-heading {
-                font-size: 16px;
-            }
-            & .main-link {
-                font-size: 13px;
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            height: 35px;
-            width: 35px;
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            height: 25px;
-            width: 25px;
-            &:hover {
-            }
-        }
-        & .copyright {
-            font-size: 12px;
-        }
-    }
-}
-// Medium devices (tablets, less than 992px)
-@mixin footer-mixin-max-md() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-            font-size: 18px;
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-                font-size: 17px;
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-            font-size: 13px;
-        }
-    }
-}
-// Large devices (desktops, less than 1200px)
-@mixin footer-mixin-max-lg() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// X-Large devices (large desktops, less than 1400px)
-@mixin footer-mixin-max-xl() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// Large devices (desktops, less than 1300px)
-@mixin footer-mixin-max-1300() {
-    .footer {
-        & .footer-logo {
-        }
-        & .footer-btn {
-        }
-        & .create-account {
-            &:hover {
-            }
-        }
-        & .join-community {
-        }
-        & .footer-title {
-        }
-        & .main-links {
-            & .main-link-heading {
-            }
-            & .main-link {
-                &::before {
-                }
-                &::after {
-                }
-                &:hover {
-                    &::before {
-                    }
-                    &::after {
-                    }
-                }
-            }
-        }
-        & .top-btn {
-            & .top-btnicon {
-            }
-        }
-        & .footer-socialicon {
-            &:hover {
-            }
-        }
-        & .copyright {
-        }
-    }
-}
-// footer media query end
-// footer end

@@ -214,5 +214,10 @@
   @include footer-mixin-max-xs();
 }
 
+// less than 420px
+@media (max-width: 420px) {
+  @include gpt-mixin-max-420px();
+  @include hero-mixin-max-420px();
+}
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width

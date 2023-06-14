@@ -64,12 +64,9 @@
 </head>
 <body>
 <!-- navbar start -->
-<nav class="navbar navbar-expand-md container-fluid sticky-top py-3" aria-label="Offcanvas navbar large" id="navbar">
+<nav class="navbar navbar-expand-md container-fluid sticky-top py-3 z-2" aria-label="Offcanvas navbar large" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="assets/img/Navbar/nav-logo.png" alt="logo" class="nav-logo img-fluid h-100 w-100"></a>
-      <button class="navbar-toggler nav-menubtn shadow-none border-0 position-absolute" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-        <span class="menu-icon d-inline-flex"><img src="assets/img/Navbar/menu_icon.svg" alt="menu-bar" class="img-fluid w-100 h-100"></span>
-      </button>
       <div class="offcanvas offcanvas-end bg-white nav-offcanvas" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar3Label">
         <div class="offcanvas-header bg-theme1">
           <div class="offcanvas-logo"><img src="assets/img/Navbar/logo.png" alt="logo"></div>
@@ -92,7 +89,12 @@
           </ul>
         </div>
       </div>
-      <div class="nav-btn"><button class="btn custom-btn rounded-0 fw-semibold py-2 px-3 border-0" type="submit">Sign Up</button></div>
+      <div class="d-flex align-content-center gap-2">
+        <div class="nav-btn"><button class="btn custom-btn rounded-0 fw-semibold py-2 px-3 border-0" type="submit">Sign Up</button></div>
+        <button class="navbar-toggler nav-menubtn p-0 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="menu-icon d-inline-flex"><img src="assets/img/Navbar/menu_icon.svg" alt="menu-bar" class="img-fluid w-100 h-100"></span>
+        </button>
+      </div>
     </div>
 </nav>
 <!-- navbar end -->
@@ -101,33 +103,33 @@
 <div class="container-fluid hero-section py-lg-5 py-4">
     <div class="container py-lg-3 py-2">
       <div class="row align-items-center justify-content-lg-between">
-        <div class="col-lg-5 hero-left px-0 pb-lg-0 pb-4">
+        <div class="col-lg-5 hero-left px-0 pb-lg-0 pb-5 ">
           <div class="row mx-0 gap-md-3 gap-2">
-            <div class="col-12 heading-1 mb-3 fw-semibold text-md-start text-center">Higher-quality  results, faster</div>
-            <div class="col-11 fw-medium title mb-3 text-md-start text-center">Introducing the end of writer's block.With Copy AI's automated crativity tools, you can generate marketing copy in seconds.</div>
+            <div class="col-12 heading-1 mb-sm-3 mb-2 fw-semibold">Higher-quality  results, faster</div>
+            <div class="col-sm-11 col-12 fw-medium title mb-sm-3 mb-2">Introducing the end of writer's block.With Copy AI's automated crativity tools, you can generate marketing copy in seconds.</div>
             <div class="col-12">
-              <div class="row align-items-center ">
-                <div class="col-md col-sm col-12"><input type="text" class="w-100 form-control rounded-0 border-0 fw-medium shadow-none bg-white py-2 fw-semibold heroinput" placeholder="Your Email Address"></div>
-                <div class="col-md-auto col-sm-auto col-12"><button class="btn custom-btn border-0 rounded-0 fw-semibold py-2 px-3 w-100" type="submit">Get Started</button></div>
+              <div class="row align-items-center btninput-group">
+                <div class="col  email-input"><input type="text" class="w-100 form-control rounded-0 border-0 fw-medium shadow-none bg-white py-2 fw-semibold heroinput" placeholder="Your Email Address"></div>
+                <div class="col-auto btn-hero"><button class="btn custom-btn border-0 rounded-0 fw-semibold py-2 px-3 w-100" type="submit">Get Started</button></div>
               </div>
             </div>
-            <div class="col-12 text-md-start text-center"><span class="position-relative d-inline-flex justify-content-center or fw-semibold">Or</span></div>
-            <div class="col-md-auto col-sm-auto col-12 text-md-start text-center">
+            <div class="col-12 orline"><span class="position-relative d-inline-flex justify-content-center or fw-semibold">Or</span></div>
+            <div class="col-auto google-btn text-md-start text-center">
               <a class="btn custom-btn-2 border-0 px-3 rounded-0 d-inline-flex gap-2 align-items-center fw-semibold w-100 justify-content-center" href="javascript:;"><span class="google-logo d-inline-flex"><img src="assets/img/index/gogle2.svg" alt="sign-up" class="img-fluid h-100 w-100"></span> Sign up with google</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 hero-right">
-          <div class="row mx-0">
-                <div class="col-12">
-                  <div class="row">
+        <div class="col-lg-6 hero-right px-md-3 px-0">
+          <div class="row mx-0 ">
+                <div class="col-12 px-md-2 px-0">
+                  <div class="row mx-0 justify-content-end g-md-4 g-sm-3 g-3">
                     <div class="col-auto pt-4">
-                      <div class="row bg-white rating  px-md-3 px-1 py-md-2 py-1 mx-0 align-items-center shadow">
-                      <div class="pen-nib d-flex justify-content-center align-items-center rounded-pill col-auto"><img src="assets/img/index/tools.svg" alt="rating" class="w-100 h-100 img-fluid"></div>
+                      <div class="row bg-white rating  px-md-3 px-1 py-md-3 py-1 mx-0 align-items-center shadow">
+                      <div class="pen-nib d-flex justify-content-center align-items-center rounded-pill col-auto"><img src="assets/img/index/tools.svg" alt="rating" class=" "></div>
                       <div class="col">
                         <div class="hero-heading-1 fw-semibold">Content</div>
                         <div class="cratars fw-semibold">30k Cratars</div>
-                        <ul class="m-0 ps-0">
+                        <ul class="m-0 ps-0 lh-1">
                           <li class="star d-inline-flex m-0"><img src="assets/img/index/Star.svg" alt="rating"></li>
                           <li class="star d-inline-flex m-0"><img src="assets/img/index/Star.svg" alt="rating"></li>
                           <li class="star d-inline-flex m-0"><img src="assets/img/index/Star.svg" alt="rating"></li>
@@ -137,14 +139,14 @@
                       </div>
                     </div>
                     </div>
-                    <div class="col  texto-result texto pb-3 z-1">
-                      <div class="row h-100  mx-md-auto mx-0">
-                        <div class="col-12 texto-result-heading hero-heading fw-semibold py-1 d-flex align-items-center"><span class="check d-inline-flex me-2"><img src="assets/img/index/check.svg" alt="check" class="h-100 w-100 img-fluid"></span> After Texto result</div>
+                    <div class="col texto-result texto pb-3 z-1">
+                      <div class="row mx-md-auto mx-0">
+                        <div class="col-12 texto-result-heading hero-heading fw-semibold  py-2 d-flex align-items-center"><span class="check d-inline-flex me-2"><img src="assets/img/index/check.svg" alt="check" class="h-100 w-100 img-fluid"></span> After Texto result</div>
                        <div class="col-12 bg-white py-2">
-                        <div class="row mx-0 gy-2 ">
+                        <div class="row mx-0 gy-2 p-1">
                           <div class="col-12 texto-content border border-2 border-secondary border-opacity-10 rounded-2 px-2 py-1">
                             <div class="row mx-0 align-items-center">
-                              <div class="col-12 hero-title-2 fw-medium px-0">Get your tes in now pay a dem in clime change</div>
+                              <div class="col-12 hero-title-2 fw-medium px-0 mb-2">Get your tes in now pay a dem in clime change</div>
                               <div class="col hero-title-3 fw-medium px-0">2 Minutes ago</div>
                               <div class="col-auto px-0">
                                 <a class="texto-icon d-inline-flex" href="javascript:;"><img src="assets/img/index/file.svg" alt="file" class="h-100 w-100 img-fluid"></a>
@@ -155,7 +157,7 @@
                           </div>
                           <div class="col-12 texto-content border border-2 border-secondary border-opacity-10 rounded-2 px-2 py-1">
                             <div class="row mx-0 align-items-center">
-                              <div class="col-12 hero-title-2 fw-medium px-0">Get your tes in now pay a dem in clime change</div>
+                              <div class="col-12 hero-title-2 fw-medium px-0 mb-2">Get your tes in now pay a dem in clime change</div>
                               <div class="col hero-title-3 fw-medium px-0">2 Minutes ago</div>
                               <div class="col-auto px-0">
                                 <a class="texto-icon d-inline-flex" href="javascript:;"><img src="assets/img/index/file.svg" alt="file" class="h-100 w-100 img-fluid"></a>
@@ -166,7 +168,7 @@
                           </div>
                           <div class="col-12 texto-content border border-2 border-secondary border-opacity-10 rounded-2 px-2 py-1">
                             <div class="row mx-0 align-items-center">
-                              <div class="col-12 hero-title-2 fw-medium px-0">Tesla is the future of transportation</div>
+                              <div class="col-12 hero-title-2 fw-medium px-0 mb-2">Tesla is the future of transportation</div>
                               <div class="col hero-title-3 fw-medium px-0">2 Minutes ago</div>
                               <div class="col-auto px-0">
                                 <a class="texto-icon d-inline-flex" href="javascript:;"><img src="assets/img/index/file.svg" alt="file" class="h-100 w-100 img-fluid"></a>
@@ -206,7 +208,7 @@
 <!-- hero section start -->
 
 <!-- captera rating section start -->
-<div class="container-fluid py-md-5 py-4 rating-captera">
+<div class="container-fluid pt-md-5 pt-5 pb-sm-5 pb-4 rating-captera">
     <div class="container pt-lg-3">
       <div class="row text-center">
         <div class="col-12"><div class="rating-main-icon d-inline-flex"><img src="assets/img/index/rating-main-logo.svg" alt="logo" class="w-100 h-100 img-fluid"></div></div>
@@ -236,7 +238,7 @@
 <!-- captera rating section start -->
 
 <!-- ai writer section start -->
-<div class="container-fluid ai-writer-main py-lg-5 py-md-5 py-4">
+<div class="container-fluid ai-writer-main  pt-md-5 pt-4 pb-md-4 pb-2">
   <div class="container">
     <div class="row">
     <div class="fw-semibold heading-2 text-center col-12">How our AI writer works</div>
@@ -309,7 +311,7 @@
            <div class="col-12">
             <div class="row align-items-center">
               <div class="col-sm-6">
-                <div class="row  bg-white shadow ai-generate-blog  mt-3 p-3 rounded-3 mx-0">
+                <div class="row  bg-white shadow ai-generate-blog  mt-3 p-3 rounded-3 mx-sm-0 mx-auto">
                   <div class="col-12 blog-heading fw-semibold d-flex align-items-center gap-2"><span class="d-inline-flex blog-icon"><img src="assets/img/index/blog.svg" alt="blog"  class="w-100 h-100 img-fluid"></span>Blog</div>
                   <div class="col-10"><hr class="my-2 text-secondary "></div>
                   <div class="col-12 fw-medium blog-content">5 way to Tackle cloud security cllallenges</div>
@@ -396,7 +398,7 @@
         </div>
         <div class="col-lg-4 pe-lg-0 airightmain">
           <div class="py-5 px-md-2 ai-generate-right h-100">
-            <div class="row gap-3 p-2 mx-0">
+            <div class="row gap-3 p-2 pb-0 mx-0">
               <div class="col-12 ">
                 <div class="row mx-0 bg-white px-2 py-3 position-relative rounded-3 shadow aigenerateplaceh">
                   <div class="col-12 d-flex gap-4">
@@ -426,7 +428,7 @@
 <!-- ai generate section end -->
 
 <!-- GPT-3 section start -->
-<div class="container-fluid gpt-takes py-lg-5 py-md-5 py-4">
+<div class="container-fluid gpt-takes  pt-md-5 pt-4 pb-md-4">
     <div class="container">
       <div class="row align-items-center gap-lg-0 gap-4">
         <div class="col-lg-6 gpt-takes-left">
@@ -439,9 +441,9 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="row p-5 pb-lg-4 gpt-takes-right">
-            <div class="col-12 z-1">
-                  <div class="row content-generate bg-white ms-auto">
+          <div class="row p-5 pe-sm-5 pe-3 gpt-takes-right">
+            <div class="col-12 pb-4">
+                  <div class="row content-generate bg-white ms-auto position-relative">
                     <div class="content-generate-heading fw-semibold col-12 py-2 d-flex align-items-center justify-content-between">AI Content Generate <span class="d-inline-flex close-icon"><img src="assets/img/index/close-icon.svg" alt="close"></span></div>
                     <div class="col-12 content-generate-headingtwo fw-semibold py-2">Choose Topic</div>
                     <div class="col-12">
@@ -483,37 +485,40 @@
                         </div>
                         <div class="col-12"><span class="placeholder placeholder-xs w-25 rounded-5 bg-secondary bg-opacity-50"></span></div>
                       </div>
-                    </div> 
-              </div>
+                    </div>
+                    <div class="export-btn2 position-absolute">
+                        <div class="col-12 z-2 ">
+                        <div class="row bg-white position-relative generate-export  ">
+                         <div class="col-12 py-3 generate-export-heading"></div>
+                         <div class="col-12 pt-3">
+                          <div class="row mx-0 gap-1">
+                         <span class="placeholder placeholder-xs col-7 bg-secondary bg-opacity-50 rounded-5"></span>
+                         <span class="placeholder placeholder-xs col-4 bg-secondary bg-opacity-50 rounded-5"></span>
+                          </div>
+                          <div class="row mx-0 gap-1 pt-3">
+                            <span class="placeholder placeholder-xs col-4 bg-secondary bg-opacity-50 rounded-5"></span>
+                            <span class="placeholder placeholder-xs col-7 bg-secondary bg-opacity-50 rounded-5"></span>
+                          </div>
+                         </div>
+                        <div class="col-7 pt-2 pb-2"><span class="placeholder placeholder-xs bg-secondary bg-opacity-50 rounded-5 w-100"></span></div>
+                        <div class="position-absolute generate-btnmain">
+                         <div class="position-relative">
+                         <button class="rounded-1 border-0 generate-btn fw-medium px-3 py-2">Generate</button>
+                         <div class="position-absolute arrowImg"><img src="assets/img/Index/btn-icon.svg" alt="generate" class="h-100 w-100 img-fluid"></div>
+                       </div>
+                       </div> 
+           
+                        <div class="position-absolute export-btnmain text-end">
+                         
+                         <button class="rounded-1 border-0 export-btn fw-medium px-2 py-1 position-relative">Export</button>
+                       
+                       </div> 
+                        </div>
+                     </div>
+                    </div>
+                 </div>
             </div>
-            <div class="col-12 z-2 ps-4">
-             <div class="row bg-white position-relative generate-export w-100 ms-4 ">
-              <div class="col-12 py-3 generate-export-heading"></div>
-              <div class="col-12 pt-3">
-               <div class="row mx-0 gap-1">
-              <span class="placeholder placeholder-xs col-7 bg-secondary bg-opacity-50 rounded-5"></span>
-              <span class="placeholder placeholder-xs col-4 bg-secondary bg-opacity-50 rounded-5"></span>
-               </div>
-               <div class="row mx-0 gap-1 pt-3">
-                 <span class="placeholder placeholder-xs col-4 bg-secondary bg-opacity-50 rounded-5"></span>
-                 <span class="placeholder placeholder-xs col-7 bg-secondary bg-opacity-50 rounded-5"></span>
-               </div>
-              </div>
-             <div class="col-7 pt-2 pb-2"><span class="placeholder placeholder-xs bg-secondary bg-opacity-50 rounded-5 w-100"></span></div>
-             <div class="position-absolute generate-btnmain">
-              <div class="position-relative">
-              <button class="rounded-1 border-0 generate-btn fw-medium px-3 py-2">Generate</button>
-              <div class="position-absolute arrowImg"><img src="assets/img/Index/btn-icon.svg" alt="generate" class="h-100 w-100 img-fluid"></div>
-            </div>
-            </div> 
-
-             <div class="position-absolute export-btnmain text-end">
-              
-              <button class="rounded-1 border-0 export-btn fw-medium px-2 py-1 position-relative">Export</button>
             
-            </div> 
-             </div>
-            </div>
           </div>
         </div>
       </div>
@@ -526,9 +531,9 @@
     <div class="container pb-md-5">
       <div class="row align-items-center gap-lg-0 gap-4">
         <div class="col-lg-6 order-lg-1 order-2">
-          <div class="row p-5 ps-sm-5 ps-3 ai-blogeditor-left position-relative">
+          <div class="row mx-0 p-5 ps-sm-5 ps-3 ai-blogeditor-left">
            <div class="col-12">
-                <div class="row blog-projectmain h-100">
+                <div class="row blog-projectmain h-100  position-relative">
                   <div class="col-12 d-flex justify-content-between methods bg-theme2 fw-semibold py-2 align-items-center">Methods <span class="d-inline-flex close-icon"><img src="assets/img/index/close-icon.svg" alt="close" class="h-100 w-100 img-fluid"></span></div>
                   <div class="col-12 blog-project bg-white  py-3">
                     <div class="row mx-0 ">
@@ -554,15 +559,16 @@
                      </div>
                     </div>
                   </div>
+                  <div class="col-12 after-textoresult-main position-absolute top-50 d-flex justify-content-end">
+                    <div class="row bg-light after-textoresult mx-0 ">
+                      <div class="col-12 after-textoresult-heading fw-semibold d-flex gap-2 py-2 align-items-center"><span class="check d-inline-flex"><img src="assets/img/index/check.svg" alt="text-result" class="h-100 w-100 img-fluid"></span>After texto result</div>
+                      <div class="col-12 after-textoresult-headingtwo fw-semibold d-flex align-items-center justify-content-between pt-3">AI Write <span class="d-inline-flex after-textoresult-headingtwo-icon rounded-1 justify-content-center"><img src="assets/img/index/check-small-yellow.svg" alt="check"></span></div>
+                      <div class="col-12 after-textoresult-content fw-medium pt-1 pb-3">Artificial intelligence to generate unique content for your website</div>
+                    </div>
+                  </div>
                 </div>
            </div>
-            <div class="col-12 after-textoresult-main position-absolute top-50 d-flex justify-content-end">
-              <div class="row bg-light after-textoresult ">
-                <div class="col-12 after-textoresult-heading fw-semibold d-flex gap-2 py-2 align-items-center"><span class="check d-inline-flex"><img src="assets/img/index/check.svg" alt="text-result" class="h-100 w-100 img-fluid"></span>After texto result</div>
-                <div class="col-12 after-textoresult-headingtwo fw-semibold d-flex align-items-center justify-content-between pt-3">AI Write <span class="d-inline-flex after-textoresult-headingtwo-icon rounded-1 justify-content-center"><img src="assets/img/index/check-small-yellow.svg" alt="check"></span></div>
-                <div class="col-12 after-textoresult-content fw-medium pt-1 pb-3">Artificial intelligence to generate unique content for your website</div>
-              </div>
-            </div>
+           
           </div>
         </div>
         <div class="col-lg-6 order-lg-2 order-1">
@@ -595,7 +601,7 @@
                 <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar3" aria-controls="offcanvasNavbar23" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end bg-white textohelp-offcanvas" tabindex="-1" id="offcanvasNavbar3" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas offcanvas-top bg-white textohelp-offcanvas " tabindex="-1" id="offcanvasNavbar3" aria-labelledby="offcanvasNavbar2Label">
                   <div class="offcanvas-header bg-theme1">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
@@ -626,57 +632,57 @@
             </nav>
           </div>
           <div class="col-12 px-lg-5 bg-white pt-lg-5 pt-4 pb-lg-4 pb-3">
-            <div class="row textohelp-content justify-content-around mx-0 gy-lg-4 gy-3">
-              <div class="col-lg-5">
-                <div class="row bg-theme2 p-3 h-100">
-                  <div class="col-auto d-flex justify-content-center pt-1"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
+            <div class="row textohelp-content justify-content-around mx-0  g-2">
+              <div class="col-lg-5 col-6">
+                <div class="row bg-theme2 p-3 pe-sm-3 pe-2 h-100 mx-0">
+                  <div class="col-auto d-flex justify-content-center pt-1 px-0"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
                   <div class="col">
-                    <div class="textohelp-content-heading fw-semibold pb-3">Unique Value position</div>
+                    <div class="textohelp-content-heading fw-semibold pb-md-3 pb-2">Unique Value position</div>
                     <div class="textohelp-content-title fw-semibold ">A short and concise unique selling proposition that top sentence of a website.</div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <div class="row bg-theme2 p-3 h-100">
-                  <div class="col-auto d-flex justify-content-center pt-1"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
+              <div class="col-lg-5 col-6">
+                <div class="row bg-theme2 p-3 pe-sm-3 pe-2 h-100 mx-0">
+                  <div class="col-auto d-flex justify-content-center pt-1 px-0"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
                   <div class="col">
-                    <div class="textohelp-content-heading fw-semibold pb-3">Paragraph Generator</div>
+                    <div class="textohelp-content-heading fw-semibold pb-md-3 pb-2">Paragraph Generator</div>
                     <div class="textohelp-content-title fw-semibold">Use this to get over writers’ block: Craft creative short blurbs for different section of the website.</div>
                   </div>
                 </div>
               </div>   
-                <div class="col-lg-5">
-                <div class="row bg-theme2 p-3 h-100">
-                  <div class="col-auto d-flex justify-content-center pt-1"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
+                <div class="col-lg-5 col-6">
+                <div class="row bg-theme2 p-3 pe-sm-3 pe-2 h-100 mx-0">
+                  <div class="col-auto d-flex justify-content-center pt-1 px-0"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
                   <div class="col">
-                    <div class="textohelp-content-heading fw-semibold pb-3">Website Sab Heading</div>
+                    <div class="textohelp-content-heading fw-semibold pb-md-3 pb-2">Website Sab Heading</div>
                     <div class="textohelp-content-title fw-semibold">An converting description that will go blow your unique Selling position on the website.</div>
                   </div>
                 </div>
               </div>   
-                <div class="col-lg-5">
-                <div class="row bg-theme2 p-3 h-100">
-                  <div class="col-auto d-flex justify-content-center pt-1"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
+                <div class="col-lg-5 col-6">
+                <div class="row bg-theme2 p-3 pe-sm-3 pe-2 h-100 mx-0">
+                  <div class="col-auto d-flex justify-content-center pt-1 px-0"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
                   <div class="col">
-                    <div class="textohelp-content-heading fw-semibold pb-3">Blog Post Outline</div>
+                    <div class="textohelp-content-heading fw-semibold pb-md-3 pb-2">Blog Post Outline</div>
                     <div class="textohelp-content-title fw-semibold">Map out your blog post’s outline simply by adding the title or topic of the blog post you want to create.</div>
                   </div>
                 </div>
               </div>   
-                <div class="col-lg-5">
-                <div class="row bg-theme2 p-3 h-100">
-                  <div class="col-auto d-flex justify-content-center pt-1"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
+                <div class="col-lg-5 col-6">
+                <div class="row bg-theme2 p-3 pe-sm-3 pe-2 h-100 mx-0">
+                  <div class="col-auto d-flex justify-content-center pt-1 px-0"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
                   <div class="col">
-                    <div class="textohelp-content-heading fw-semibold pb-3">Section Tittle Generator</div>
+                    <div class="textohelp-content-heading fw-semibold pb-md-3 pb-2">Section Tittle Generator</div>
                     <div class="textohelp-content-title fw-semibold">Creative title to each section of your website or Landing page. no more boring about us.</div>
                   </div>
                 </div>
               </div>   
-                <div class="col-lg-5">
-                <div class="row bg-theme2 p-3 h-100">
-                  <div class="col-auto d-flex justify-content-center pt-1"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
+                <div class="col-lg-5 col-6">
+                <div class="row bg-theme2 p-3 pe-sm-3 pe-2 h-100 mx-0">
+                  <div class="col-auto d-flex justify-content-center pt-1 px-0"><div class="textohelp-rightarrow border-1 border rounded-pill border-theme1  d-flex align-items-center justify-content-center p-1"><img src="assets/img/index/check-small-yellow.svg" alt="unique-value" class="h-100 w-100 img-fluid"></div></div>
                   <div class="col">
-                    <div class="textohelp-content-heading fw-semibold pb-3">Blog Post Topic Ideas</div>
+                    <div class="textohelp-content-heading fw-semibold pb-md-3 pb-2">Blog Post Topic Ideas</div>
                     <div class="textohelp-content-title fw-semibold">Trained with data from hundreds of thousands of blog posts, Texto uses this data to generate.</div>
                   </div>
                 </div>
@@ -931,7 +937,7 @@
 <div class="price-section container-fluid py-lg-5 py-md-5 py-4 bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-12 heading-2 fw-semibold text-center pb-3">Fast copywriting by AI</div>
+      <div class="col-12 heading-2 fw-semibold text-center pb-sm-3 ">Fast copywriting by AI</div>
       <div class="col-12 title fw-medium text-center pb-3">Quicly and easily create effect copy fo blog posts, <br> email marketing campaigns, and more. </div>
      <div class="col-12 pb-4">
      <div class="row justify-content-center check-btn align-items-center">
@@ -946,9 +952,9 @@
      </div>
     <div class="col-12 pt-md-5 pt-4">
       <div class="row gy-4">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="pricing-card bg-white border-1 border row py-4 gap-md-3 gap-2 mx-0 h-100">
-            <div class="col-12 text-center price-heading fw-semibold pt-4">Starter</div>
+            <div class="col-12 text-center price-heading fw-bolder pt-4">Starter</div>
             <div class="col-12 text-center price fw-bold ">$24 <span class="time ps-2">Per month</span></div>
             <div class="col-12 text-center pricing-content fw-medium">No credit card required</div>
             <div class="col-12 text-center"><button class="btn try-btn rounded-0 px-4 py-2 my-3 fw-medium border border-2 border-theme1">Try for free</button></div>
@@ -957,9 +963,9 @@
             <div class="col-12 text-center days fw-semibold pt-5">7 Days free trial</div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="pricing-card bg-white border-1 border row py-4 gap-md-3 gap-2 mx-0 grow-plan h-100">
-            <div class="col-12 text-center price-heading fw-semibold pt-4">Grow Plan</div>
+            <div class="col-12 text-center price-heading fw-bolder pt-4">Grow Plan</div>
             <div class="col-12 text-center price fw-bold ">$166 <span class="time ps-2">Per month</span></div>
             <div class="col-12 text-center pricing-content fw-medium">No credit card required</div>
             <div class="col-12 text-center"><button class="btn try-btn breadcrumb-item border-2 border-theme1 rounded-0 px-4 py-2 my-3 fw-medium bg-theme1">Try for free</button></div>
@@ -968,10 +974,10 @@
             <div class="col-12 text-center days fw-semibold pt-5">7 Days free trial</div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="pricing-card enterprise bg-theme2 border-1 border row py-4 gap-md-3 gap-2 mx-0 h-100">
-            <div class="col-12 text-center price-heading fw-semibold pt-4 text-white">Enterprise</div>
-            <div class="col-12 text-center priceheading2 fw-bold text-white">Contact Sales</div>
+            <div class="col-12 text-center price-heading fw-bolder pt-4 text-white">Enterprise</div>
+            <div class="col-12 text-center priceheading2 fw-bolder text-white">Contact Sales</div>
             <div class="col-12 text-center pricing-content fw-medium text-white-50">No credit card required</div>
             <div class="col-12 text-center"><button class="btn try-btn rounded-0 px-4 py-2 my-3 fw-semibold text-white-50 border-2 border border-theme1">Try for free</button></div>
             <div class="col-12 text-center pricing-content fw-medium text-white-50">Unlimited contact Generation</div>
@@ -1162,7 +1168,7 @@
             </div>
            </div>
            <div class="col-1 d-lg-block d-none"></div>
-           <div class="col-lg-2 col-sm-4 main-links">
+           <div class="col-lg-2 col-sm-4 col-6 main-links">
             <div class="main-link-heading fw-semibold pb-lg-4 pb-sm-3 pb-1 ps-3">Use cases</div>
             <ul class="list-unstyled d-flex flex-column gap-1">
               <li><a href="javascript:;" class="main-link fw-semibold text-white-50 text-decoration-none position-relative d-inline-block ps-3">Blog writing</a></li>
@@ -1173,7 +1179,7 @@
               <li><a href="javascript:;" class="main-link fw-semibold text-white-50 text-decoration-none position-relative d-inline-block ps-3">Creative writing</a></li>
             </ul>
            </div>
-           <div class="col-lg-2 col-sm-4 main-links">
+           <div class="col-lg-2 col-sm-4 col-6 main-links">
             <div class="main-link-heading fw-semibold pb-lg-4 pb-sm-3 pb-1 ps-3">Solution</div>
             <ul class="list-unstyled d-flex flex-column gap-1">
               <li><a href="javascript:;" class="main-link fw-semibold text-white-50 text-decoration-none position-relative d-inline-block ps-3">Ecommerce</a></li>
