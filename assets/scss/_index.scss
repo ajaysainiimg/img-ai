@@ -1049,8 +1049,8 @@
             font-size: 12px;
             background: lighten($success, 50) ;
             color: $theme2;
-            height: 25px;
-            width: 25px;
+            height: 30px;
+            width: 30px;
         }
     }
     & .ai-writer-right {
@@ -1514,8 +1514,8 @@
         background-color: lighten($danger, 44);
         & .ai-count {
             font-size: 12px;
-            height: 28px;
-            width: 28px;
+            height: 30px;
+            width: 30px;
             background-color:lighten($danger, 40);
         }
         & .ai-generate-blog {
@@ -4735,7 +4735,6 @@
                     width: 15px;
                     background-size: cover;
                      background-position: center;
-                     margin-left: 15px;
                   }
                   &:not(.collapsed)::after {
                     background: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
@@ -4743,7 +4742,6 @@
                      width: 15px;
                      background-size: cover;
                      background-position: center;
-                     margin-left: 15px;
                   }
                   &:not(.collapsed) {
                     background-color: $white ;
